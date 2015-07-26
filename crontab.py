@@ -44,6 +44,6 @@ def set_cronjob(minute, hour, day_of_m, day_of_w, month, command):
     else:
         exec_month = month
 
-    print(command_line.exec_command("crontab -e {} {} {} {} {} {}".format(exec_minute, exec_hour, exec_day_of_m, exec_day_of_w, exec_month, command))
+    print(command_line.exec_command("crontab -e {} {} {} {} {} {}".format(exec_minute, exec_hour, exec_day_of_m, exec_day_of_w, exec_month, command)))
     return None
         
